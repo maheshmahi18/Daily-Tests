@@ -1,0 +1,73 @@
+Binary Decimal Pattern
+
+
+The program must accept an integer N as the input. The program must print the binary decimal pattern as shown in the Example Input/Output section
+
+
+Boundary Condition(s):
+
+1 <= N <= 10^16
+
+
+Input Format:
+
+The first line contains the value of N.
+
+
+Output Format:
+
+The lines containing the desired pattern as shown in the Example Input/Output section,
+
+
+Example Input/Output 1:
+
+Input:
+
+1142
+
+Output:
+
+1111
+0011
+0010
+0010
+
+
+Example Input/Output 2:
+
+Input
+
+121
+
+Output:
+
+111
+010
+
+
+Sollution: Done in python
+
+
+n=input().strip()
+d=[]
+for i in n:
+    d.append(int(i))
+e=max(d)
+a=[]
+for i in n:
+    b=int(i)
+    c=[]
+    for j in range(e):
+        if(b>0):
+            c.append(1)
+            b-=1
+        else:
+            c.append(0)
+    a.append(c)
+for i in range(e):
+    for j in range(len(n)):
+        print(a[j][i],end="")
+    print()
+
+
+Code by Mahesh
