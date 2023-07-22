@@ -1,0 +1,85 @@
+Remove Most Repeated Characters
+
+
+The program must accept a string 5 as the input. The program must remove all the occurrences of the most repeated (occurs at least two times) character(s) in S. Finally, the program must print the modified string value 5 as the output. If more than one characters are repeated most number of times then the program must remove all the occurrences of those characters. If all the characters are removed from $ then the program must print -1 as the output.
+
+
+Boundary Condition(s):
+
+1 <= Length of S<= 10^6
+
+
+Input Format:
+
+The first line contains the string value S.
+
+
+Output Format:
+
+The first line contains the modified string value S.
+
+
+Example Input/Output 1:
+
+Input:
+
+baabAaba
+
+
+Output:
+
+bbAb
+
+Explanation:
+
+The frequency of the character a is 4
+The frequency of the character b is 3 The frequency of the character A is 1
+
+Here the character a has occurred the most number of times. So the character a is removed from ba bA b
+
+Hence the output is bbAb
+
+
+Example Input/Output 2:
+
+
+Input:
+
+abcd
+
+
+Output:
+
+abcd
+
+
+Example Input/Output 3:
+
+
+Input:
+
+aAaA
+
+
+Output:
+
+-1
+
+
+
+Sollution: Done in Python
+
+
+a=input().strip()
+x=list(set(list(a)))
+p=[a.count(i)for i in x];ps=""
+for i in a:
+    if p[x.index(i)]!=max(p) or max(p)==1:
+        ps+=i
+if ps=="":
+    print(-1)
+else:
+    print(ps)
+
+
+Code by Mahesh
