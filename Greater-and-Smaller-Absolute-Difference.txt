@@ -24,7 +24,7 @@ Example Input/Output 1:
 Input:
 
 5
-20 30 5044 10
+20 30 50 44 10
 35
 
 Output:
@@ -45,7 +45,7 @@ Example Input/Output 2:
 Input:
 
 10
-37941136258
+3 7 9 4 1 13 6 2 5 8
 3
 
 Output:
