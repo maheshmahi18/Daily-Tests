@@ -1,0 +1,59 @@
+Minimum Changes
+
+The program must accept two integers Nl and N2 as the input. The program must find the minimum number of changes required to make the integers equal. A change represents dividing an integer by 2 (consider floor value when dividing an odd
+integer) and print the minimum number of changes as the output.
+
+Boundary Condition(s):
+
+1 <= N1,  N2 <= I0^5
+
+Input Format:
+
+The first line contains Nl and N2 separated by a space.
+
+Output Format:
+
+The first line contains the minimum number of changes required to make the integers equal.
+
+
+Example Input/Output 1:
+
+Input:
+
+16 5
+
+Output:
+
+4
+
+Explanation:
+
+3 Changes in 16: 16/2 8/2 4/2 2
+1 Change in 5: 5/2 -Y 2
+
+Example Input/Output 2:
+
+Input:
+
+13 17
+
+Output:
+
+7
+
+
+Sollution: Done in Python
+
+
+a,b=map(int,input().split())
+c=0
+while(a!=b):
+    if(a>b):
+        a//=2
+    else:
+        b//=2
+    c+=1
+print(c)
+
+
+Code by Mahesh
