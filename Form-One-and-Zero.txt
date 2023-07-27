@@ -1,0 +1,56 @@
+Form One and Zero
+
+
+The program must accept a suing S containing only z, e, r, o and n as the input The program must rearrange the string S such that the modified string containing only "one" and "zero" (all one's follo•.ved by all zero's). If it is not possible to rearrange the string S then the program must print -1 as the output
+
+
+Boundary Condition(s):
+
+1 <= Length of S <= 1000
+
+
+Input Format:
+
+The first line contains S,
+
+Output Format:
+
+The first line contains the modified string S.
+
+Example Input/Output 1;
+
+Input
+
+nznooeeoer
+
+Output:
+
+oneonezero
+
+Explanation:
+
+The string 'nznooeeoer' can be rearranged as
+
+Hence the output is oneonezero
+
+
+Example Input/Output 2:
+
+Input
+
+erozn
+
+Output:
+
+-1
+
+
+
+Sollution: Done in Python
+
+
+a=input().strip()
+n,z=a.count('n'),a.count('z')
+if len('one'*n)+len('zero'*z)==len(a): print('one'*n,'zero'*z,sep='')
+else: print(-1)
+
