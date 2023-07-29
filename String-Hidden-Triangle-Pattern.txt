@@ -1,0 +1,59 @@
+String - Hidden Triangle Pattern
+
+The program must accept a string S where the length of S is always odd as the input. The program must print the desired pattern as shown in the Example Input/Output section.
+
+
+Boundary Condition(s):
+
+3 <= Length of S <= 99
+
+Input Format:
+
+The first line contains S.
+
+Output Format:
+
+The lines contain the desired pattern as shown in the Example Input/Output section.
+
+
+Example Input/Output 1:
+
+Input:
+
+chicken
+
+Output:
+
+kencchi
+enickch
+nhickec
+chicken
+
+
+Example Input/Output 2:
+
+Input:
+
+ABCDEFGHI
+
+Output:
+
+FGHIEABCD
+GHIDEFABC
+HICDEFGAB
+IBCDEFGHA
+ABCDEFGHI
+
+
+
+Sollution: Done in Python
+
+
+s=input().strip()
+a=len(s)//2
+for i in range(len(s)//2+1):
+    print(s[-a:]+s[a:-a]+s[:a])
+    a-=1
+
+
+Code by Mahesh
