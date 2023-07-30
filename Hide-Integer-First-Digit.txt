@@ -1,0 +1,73 @@
+Hide Integer - First Digit
+
+
+The program must accept an integer N as the input. The program must replace all the digits of N by * if the first digit of N is even. Else the program must print the integer without any modification as the output.
+
+Note: N is always a non-zero value.
+
+Boundary Condition(s):
+
+-10^8 <= N <= 10^8
+
+Input Format:
+
+The first line contains N.
+
+Output Format:
+
+The first line contains the modified value of N.
+
+
+Example Input/Output 1:
+
+Input:
+
+2147
+
+Output:
+
+****
+
+
+Explanation:
+
+The first digit of 0147 is an even digit.
+So all the digits are replaced by
+
+Hence the output is ****
+
+
+Example Input/Output 2:
+
+Input:
+
+7042
+
+Output:
+
+7042
+
+
+Example Input/Output 3:
+
+Input:
+
+-49
+
+Output:
+
+**
+
+
+Sollution:  Done in Python
+
+n=int(input())
+a=n
+n=abs(n)
+if int(str(n)[0])%2==0:
+    print('*'*len(str(n)))
+else:
+    print(a)
+
+
+Code by Mahesh
