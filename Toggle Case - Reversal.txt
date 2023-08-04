@@ -1,0 +1,51 @@
+Toggle Case - Reversal
+
+
+The program must accept a string S containing only alphabets and an integer X as the input. The program must toggle the case
+of the first X alphabets in S and print them in reverse order as the output.
+
+Boundary Condition(s):
+
+1 <= Length of S <= 100
+1 X <= Length of S
+
+
+Example Input/Output 1:
+
+Input:
+
+ABCDefghaB
+5
+
+Output:
+
+Edcba
+
+
+Example Input/Output 2:
+
+Input:
+
+ANgeLGODdess
+7
+
+Output:
+
+oglEGna
+
+
+Sollution:
+
+
+s=input().strip()
+n=int(input())
+a=s[0:n]  
+for i in range(len(a)-1,-1,-1):
+  if(a[i].isupper()):
+    print(a[i].lower(),end="")
+  else:
+    print(a[i].upper(),end="")
+
+
+
+Code by Mahesh
