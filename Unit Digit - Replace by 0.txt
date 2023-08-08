@@ -1,0 +1,62 @@
+"""
+
+Unit Digit - Replace by O
+
+The program must accept an integer N as the input. The program must replace all the occurrences of the unit digit of N by O in 
+the integer N. Finally, the program must print the modified value of N as the output.
+
+Boundary Condition(s):
+
+1 <= N <= 10^8
+s
+Input Format:
+
+The first line contains the value of N.
+
+Output Format:
+
+The first line contains the modified value of N.
+
+
+Example Input/Output 1:
+
+Input:
+
+1021
+
+Ouput:
+
+20
+
+Explanation:
+The unit digit of 1021 is 1.
+So after replacing all the occurrence of I by O, the integer becomes 0020.
+
+Hence the output is 20
+
+
+Example Input/Output 2:
+
+Input:
+
+202202
+
+Ouput:
+
+0
+
+
+
+Sollution: Done in Python
+
+"""
+
+s=input().strip()
+a=s[-1]
+b=""
+for i in s:
+    if(i==a):
+        b+='0'
+    else:
+        b+=i
+print(int(b))
